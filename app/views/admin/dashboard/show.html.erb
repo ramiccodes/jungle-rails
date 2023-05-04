@@ -1,2 +1,16 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1 class='mt-3 text-center'>Admin Dashboard</h1>
+
+<div class='d-flex justify-content-between'>
+  <div>
+    <button class="btn btn-products" type="button">
+    <%= link_to 'All Products', [:admin, :products] %>
+    <h2><%= @product_count %></h2>
+    </button>
+  </div>
+  <div>
+    <button class="btn btn-products" type="button">
+    All Categories
+    <h2><%= @category_count %></h2>
+    </button>
+  </div>
+</div>
