@@ -5,6 +5,7 @@
   </header>
 
   <div class="panel panel-default items">
+    <% if enhanced_cart.length >= 1 %>
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -46,7 +47,14 @@
           data-currency="cad">
         </script>
       <% end %>
+    <% elsif %>
+      <div>
+      <%= @message %>
+      <%= link_to 'Go back to the homepage', root_path, class: "alert alert-danger" %>
+      </div>
+    <% end %>
     </div>
   </div>
+  
 
 </section>
